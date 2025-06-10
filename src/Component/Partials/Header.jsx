@@ -67,11 +67,11 @@ const Header = () => {
                                                     MRN List
                                                 </Link>
                                             </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-
+                                            </ul>
+                                            </li>
+                                            </ul>
+                                            </div>
+                        
                             <div className="menu-item">SETUP</div>
                             <div className="menu-item">PLANNING</div>
                             <div className="menu-item">ENGINEERING</div>
@@ -108,7 +108,7 @@ const Header = () => {
                                                                 Edit
                                                             </Link>
                                                         </li>
-
+                                                
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -126,6 +126,11 @@ const Header = () => {
                                         <span className="right-arrow">▶</span>
                                         <ul className="submenu">
                                             <li>Issue</li>
+                                            <li>
+                                                <Link to="/issue-material" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Contractor Out</li>
                                             <li>Manual Material Transfer</li>
                                             <li>Issue Return</li>

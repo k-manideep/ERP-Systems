@@ -8,7 +8,11 @@ import OpeningQuantityForm from "./Component/OpeningQuantityForm/OpeningQuantity
 import OpeningAddForm from "./Component/OpeningAddForm/OpeningAddForm";
 import LoginForm from "./Component/LoginForm/LoginForm";
 import ChangePasswordForm from "./Component/ChangePasswordForm/ChangePasswordForm"
-
+// import IssueMaterialModule from "./Component/IssueMaterial/IssueMaterialModule";
+import IssueMaterialContractor from "./Component/IssueMaterialForm/IssueMaterialContractor";
+import IssueReport from "./Component/IssueMaterialForm/IssueReport";
+import IssueMaterialForm from "./Component/IssueMaterialForm/IssueMaterialForm";
+import IssueReportContractor from "./Component/IssueMaterialForm/IssueReportContractor";
 function App() {
   return (
     <div className="App">
@@ -23,7 +27,10 @@ function App() {
         <Route path="/opening-add" element={<OpeningAddForm />} />
         <Route path="/mrn-list" element={<MRNListForm />} /> 
         <Route path="/change-password" element={<ChangePasswordForm/>}/>
-
+        <Route path="/issue-report" element={<IssueReport/>}/>
+        <Route path="/issue-material" element={<IssueMaterialForm />} />
+        <Route path="/issue-material-contractor" element={<IssueMaterialContractor/>}/>
+        <Route path="/issue-report-contractor" element={<IssueReportContractor/>}/>
       </Routes>
     </Router> 
     </div>
