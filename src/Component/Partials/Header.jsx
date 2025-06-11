@@ -148,15 +148,65 @@ const Header = () => {
                                         <span className="right-arrow">▶</span>
                                         <ul className="submenu">
                                             <li>Stock In Hand </li>
+                                             <li>
+                                                <Link to="/stock-in-hand" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Stack Valuation In Hand</li>
+                                            <li>
+                                                <Link to="/stock-valuation" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Construction &Stock Issue</li>
+                                            <li>
+                                                <Link to="/construction-Stock-issue" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Stock Transfer Register</li>
+                                            <li>
+                                                <Link to="/stock-transfer-register" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Stock Transit Register</li>
+                                            <li>
+                                                <Link to="/stock-transit-register" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Item Group Wise Stock</li>
+                                            <li>
+                                                <Link to="/item-stock-group" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Stock Aging Report </li>
+                                            <li>
+                                                <Link to="/pending-item-stock" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Company Stock</li>
+                                             <li>
+                                                <Link to="/company-stock" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Company Item Wise Stock</li>
+                                            <li>
+                                                <Link to="/item-stock-report" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Meterial Stock Wages</li>
+                                            <li>
+                                                <Link to="/material-stock-wages" className="link-style">
+                                                    Issue
+                                                </Link>
+                                            </li>
                                             <li>Rejected Stock </li>
                                             <li>Item Process Stock </li>
                                             <li>project Material Qty </li>

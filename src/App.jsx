@@ -13,6 +13,18 @@ import IssueMaterialContractor from "./Component/IssueMaterialForm/IssueMaterial
 import IssueReport from "./Component/IssueMaterialForm/IssueReport";
 import IssueMaterialForm from "./Component/IssueMaterialForm/IssueMaterialForm";
 import IssueReportContractor from "./Component/IssueMaterialForm/IssueReportContractor";
+import StockInHandForm from "./Component/StoreReports/StockInHandForm/StockInHandForm";
+import StockValuationForm from "./Component/StoreReports/StockValuationForm/StockValuationForm";
+import ConstructionStockIssueReport from "./Component/StoreReports/ConstructionStockIssueReport/ConstructionStockIssueReport";
+import StockTransferRegister from "./Component/StoreReports/StockTransferRegister/StockTransferRegister";
+import StockTransitRegister from "./Component/StoreReports/StockTransitRegister/StockTransitRegister";
+import ItemStockGroup from "./Component/StoreReports/ItemStockGroup/ItemStockGroup";
+import PendingItemStock from "./Component/StoreReports/PendingItemStock/PendingItemStock";
+import CompanyStock from "./Component/StoreReports/CompanyStock/CompanyStock";
+import ItemStockReport from "./Component/StoreReports/ItemStockReport/ItemStockReport";
+import MaterialStockWages from "./Component/StoreReports/MaterialStockWages/MaterialStockWages";
+
+
 function App() {
   return (
     <div className="App">
@@ -31,6 +43,17 @@ function App() {
         <Route path="/issue-material" element={<IssueMaterialForm />} />
         <Route path="/issue-material-contractor" element={<IssueMaterialContractor/>}/>
         <Route path="/issue-report-contractor" element={<IssueReportContractor/>}/>
+        <Route path="/stock-in-hand" element={<StockInHandForm/>}/>
+        <Route path="/stock-valuation" element={<StockValuationForm/>}/>
+        <Route path="/construction-Stock-issue" element={<ConstructionStockIssueReport/>}/>
+        <Route path="/stock-transfer-register" element={<StockTransferRegister/>}/>
+        <Route path="/stock-transit-register" element={<StockTransitRegister/>}/>
+        <Route path="/item-stock-group" element={<ItemStockGroup/>}/>
+        <Route path="/pending-item-stock" element={<PendingItemStock/>}/>
+        <Route path="/company-stock" element={<CompanyStock/>}/>
+        <Route path="/item-stock-report" element={<ItemStockReport/>}/>
+        <Route path="/material-stock-wages" element={<MaterialStockWages/>}/>
+      
       </Routes>
     </Router> 
     </div>
