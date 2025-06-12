@@ -147,72 +147,92 @@ const Header = () => {
                                         <span className="dropdown-text">Store Reports</span>
                                         <span className="right-arrow">▶</span>
                                         <ul className="submenu">
-                                            <li>Stock In Hand </li>
+                                            
                                              <li>
                                                 <Link to="/stock-in-hand" className="link-style">
-                                                    Issue
+                                                    Stock In Hand
                                                 </Link>
                                             </li>
-                                            <li>Stack Valuation In Hand</li>
+                                            
                                             <li>
                                                 <Link to="/stock-valuation" className="link-style">
-                                                    Issue
+                                                    Stack Valuation In Hand
                                                 </Link>
                                             </li>
-                                            <li>Construction &Stock Issue</li>
+                                            
                                             <li>
                                                 <Link to="/construction-Stock-issue" className="link-style">
-                                                    Issue
+                                                    Construction &Stock Issue
                                                 </Link>
                                             </li>
-                                            <li>Stock Transfer Register</li>
+                                            
                                             <li>
                                                 <Link to="/stock-transfer-register" className="link-style">
-                                                    Issue
+                                                    Stock Transfer Register
                                                 </Link>
                                             </li>
-                                            <li>Stock Transit Register</li>
+                                            
                                             <li>
                                                 <Link to="/stock-transit-register" className="link-style">
-                                                    Issue
+                                                    Stock Transit Register
                                                 </Link>
                                             </li>
-                                            <li>Item Group Wise Stock</li>
+                                            
                                             <li>
                                                 <Link to="/item-stock-group" className="link-style">
-                                                    Issue
+                                                    Item Group Wise Stock
                                                 </Link>
                                             </li>
-                                            <li>Stock Aging Report </li>
+                                           
                                             <li>
                                                 <Link to="/pending-item-stock" className="link-style">
-                                                    Issue
+                                                    Stock Aging Report
                                                 </Link>
                                             </li>
-                                            <li>Company Stock</li>
+                                            
                                              <li>
                                                 <Link to="/company-stock" className="link-style">
-                                                    Issue
+                                                    Company Stock
                                                 </Link>
                                             </li>
-                                            <li>Company Item Wise Stock</li>
+                                            
                                             <li>
                                                 <Link to="/item-stock-report" className="link-style">
-                                                    Issue
+                                                    Company Item Wise Stoc
                                                 </Link>
                                             </li>
-                                            <li>Meterial Stock Wages</li>
+                                            
                                             <li>
                                                 <Link to="/material-stock-wages" className="link-style">
-                                                    Issue
+                                                    Meterial Stock Wages
                                                 </Link>
                                             </li>
-                                            <li>Rejected Stock </li>
-                                            <li>Item Process Stock </li>
-                                            <li>project Material Qty </li>
+    
+                                            <li>
+                                                <Link to="/rejected-stock" className="link-style">
+                                                    Rejected Stock
+                                                </Link>
+                                            </li>
+                                            
+                                            <li>
+                                                <Link to="/process-item-stock" className="link-style">
+                                                   Item Process Stock
+                                                </Link>
+                                            </li>
+                                           
+                                            <li>
+                                                <Link to="/project-material" className="link-style">
+                                                   project Material Qty
+                                                </Link>
+                                            </li>
                                             <li>Location Wise Issue</li>
                                             <li>Contractor</li>
                                             <li>Report  Builder</li>
+                                            <li>
+                                                <Link to="/local-issue-report" className="link-style">
+                                                   project Material Qty
+                                                </Link>
+                                            </li>
                                         </ul>
                                     </li>
                                 </ul>

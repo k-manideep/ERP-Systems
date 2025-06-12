@@ -1,0 +1,115 @@
+/* File: components/ReportBuilder/ReportBuilderForm.css */
+
+.rb-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rb-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rb-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.rb-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+  align-items: flex-end;
+}
+
+.rb-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 18%; /* Make sure 5 fields fit in a row */
+  min-width: 150px;
+}
+
+.rb-group label {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.rb-group select,
+.rb-group input[type="text"],
+.rb-group input[type="date"] {
+  padding: 6px 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rb-daterange {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rb-dash {
+  padding: 0 5px;
+}
+
+.rb-inline-buttons,
+.rb-export-buttons {
+  display: flex;
+  gap: 8px;
+  flex-wrap: nowrap;
+  margin-top: 0;
+  align-items: flex-end;
+}
+
+.rb-inline-buttons {
+  flex: 2;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rb-export-buttons {
+  flex: 2;
+  justify-content: flex-start;
+}
+
+.rb-btn {
+  padding: 6px 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.rb-btn-active {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.rb-export {
+  background-color: #28a745;
+  color: white;
+}
+
+.rb-download {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.rb-required {
+  color: red;
+  margin-left: 3px;
+}

@@ -23,7 +23,14 @@ import PendingItemStock from "./Component/StoreReports/PendingItemStock/PendingI
 import CompanyStock from "./Component/StoreReports/CompanyStock/CompanyStock";
 import ItemStockReport from "./Component/StoreReports/ItemStockReport/ItemStockReport";
 import MaterialStockWages from "./Component/StoreReports/MaterialStockWages/MaterialStockWages";
-
+import RejectedStock from "./Component/StoreReports/RejectedStock/RejectedStock";
+import ProcessItemStockForm from "./Component/StoreReports/ProcessItemStock/ProcessItemStockForm";
+import ProjectMaterialForm from "./Component/StoreReports/ProjectMaterial/ProjectMaterialForm";
+import ContractorStockForm from "./Component/StoreReports/ContractorStock/ContractorStockForm";
+import ReportBuilderForm from "./Component/StoreReports/ReportBuilder/ReportBuilderForm";
+import ContractorClosingStock from "./Component/StoreReports/ContractorClosingStock/ContractorClosingStock";
+import ContractorWastageReport from "./Component/StoreReports/ContractorWastageReport/ContractorWastageReport";
+import LocationIssueReport from "./Component/StoreReports/LocationIssueReport/LocationIssueReport";
 
 function App() {
   return (
@@ -53,6 +60,14 @@ function App() {
         <Route path="/company-stock" element={<CompanyStock/>}/>
         <Route path="/item-stock-report" element={<ItemStockReport/>}/>
         <Route path="/material-stock-wages" element={<MaterialStockWages/>}/>
+        <Route path="/rejected-stock" element={<RejectedStock/>}/>
+        <Route path="/process-item-stock" element={<ProcessItemStockForm/>}/>
+        <Route path="/project-material" element={<ProjectMaterialForm/>}/>
+        <Route path="/contractor-stock" element={<ContractorStockForm/>}/>
+        <Route path="/report-builder" element={<ReportBuilderForm/>}/>
+        <Route path="/Contractor-closing-stock" element={<ContractorClosingStock/>}/>
+        <Route path="/Contractor-wastage-report" element={<ContractorWastageReport/>}/>
+        <Route path="/local-issue-report" element={<LocationIssueReport/>}/>
       
       </Routes>
     </Router> 
