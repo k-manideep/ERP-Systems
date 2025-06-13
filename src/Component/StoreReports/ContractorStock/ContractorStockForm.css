@@ -1,7 +1,6 @@
 .cs-container {
   background-color: #fff;
   padding: 20px;
-  border: 1px solid #ccc;
   border-radius: 6px;
   font-family: "Segoe UI", sans-serif;
   width: 100%;
@@ -15,15 +14,26 @@
 }
 
 .cs-row {
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)) auto;
   gap: 15px;
-  align-items: end;
+  align-items: end; */
+  display: flex
+;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+    padding: 15px 15px;
 }
 
 .cs-group {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  display: flex
+;
+    flex-direction: column;
+    flex: 0 0 190px;
+    min-width: 180px;
 }
 
 .cs-group label {
@@ -87,4 +97,7 @@
 
 .required {
   color: red;
+}
+.cs-main{
+      border: 1px solid #d0d7de;
 }

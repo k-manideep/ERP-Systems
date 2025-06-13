@@ -84,7 +84,7 @@
 
 // export default IssueReport;
 import React, { useState } from "react";
-import './IssueReport.css';
+import './CancelIssue.css';
 
 const IssueReportForm = () => {
   const [userType, setUserType] = useState("All");

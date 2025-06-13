@@ -31,6 +31,7 @@ import ReportBuilderForm from "./Component/StoreReports/ReportBuilder/ReportBuil
 import ContractorClosingStock from "./Component/StoreReports/ContractorClosingStock/ContractorClosingStock";
 import ContractorWastageReport from "./Component/StoreReports/ContractorWastageReport/ContractorWastageReport";
 import LocationIssueReport from "./Component/StoreReports/LocationIssueReport/LocationIssueReport";
+import ContractorOutMaterialForm from "./Component/Store/ContractorOutMaterial/ContractorOutMaterialForm";
 
 function App() {
   return (
@@ -68,6 +69,7 @@ function App() {
         <Route path="/Contractor-closing-stock" element={<ContractorClosingStock/>}/>
         <Route path="/Contractor-wastage-report" element={<ContractorWastageReport/>}/>
         <Route path="/local-issue-report" element={<LocationIssueReport/>}/>
+        <Route path="/contractor-out-material" element={<ContractorOutMaterialForm/>}/>
       
       </Routes>
     </Router> 

@@ -2,9 +2,14 @@
 import React from 'react';
 import './ContractorClosingStock.css';
 import { FaSearch } from 'react-icons/fa';
+import Header from '../../Partials/Header';
+import Footer from '../../Partials/Footer';
+import ChatBotIcon from '../../ChatBot/ChatBotIcon';
 
 const ContractorClosingStock = () => {
   return (
+    <>
+    <Header/>
     <div className="ccs-container">
         <div className='css-main'>
       <div className="ccs-title">CONTRACTOR CLOSING STOCK</div>
@@ -49,6 +54,9 @@ const ContractorClosingStock = () => {
       </div>
       </div>
     </div>
+    <Footer/>
+    <ChatBotIcon/>
+    </>
   );
 };
 

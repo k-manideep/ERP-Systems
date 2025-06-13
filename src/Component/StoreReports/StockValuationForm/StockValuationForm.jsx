@@ -14,6 +14,7 @@ const StockValuationForm = () => {
       <div className="valuation-header">STOCK VALUATION IN HAND</div>
       <div className="valuation-row">
         <select className="form-select">
+          <label>Project<span className="st-required">*</span></label>
           <option>-Select-</option>
         </select>
         <select className="form-select">
