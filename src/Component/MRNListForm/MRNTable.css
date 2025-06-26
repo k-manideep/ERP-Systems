@@ -1,0 +1,57 @@
+.mrn-table-wrapper {
+  margin-top: 20px;
+}
+
+/* Header above table */
+.mrn-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaf2f8;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px 4px 0 0;
+}
+
+.mrn-table-title {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+      color: #007bff;
+}
+
+.mrn-table-icons {
+  display: flex;
+  gap: 15px;
+  color: #007bff;
+  
+}
+
+.mrn-table-icons .icon {
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s;
+}
+
+.mrn-table-icons .icon:hover {
+  transform: scale(1.2);
+}
+
+/* Table styling */
+.mrn-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.mrn-table th,
+.mrn-table td {
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.mrn-table th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}

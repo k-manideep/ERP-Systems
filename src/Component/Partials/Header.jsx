@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom'; // useNavigate for program
 import './Header.css';
 import { IoMdArrowDropdown } from "react-icons/io";
 
+
 const Header = () => {
     const [selectedOption, setSelectedOption] = useState('');
     const [userName, setUserName] = useState('Guest');
@@ -55,16 +56,17 @@ const Header = () => {
                 <div className="top-bar">
                     <div className="menu-container">
                         <div className="menu">
+                            
                             <div className="menu-item dropdown">
                                 SETUP <span className="arrow"><IoMdArrowDropdown /></span>
                                 <ul className="dropdown-content">
                                     <li className="has-submenu">
-                                        <span className="dropdown-text">Site</span>
+                                        <span className="dropdown-text">Security & Password</span>
                                         <span className="right-arrow">▶</span>
                                         <ul className="submenu">
                                             <li>
                                                 <Link to="/change-password" className="link-style">
-                                                    MRN List
+                                                    Change Password
                                                 </Link>
                                             </li>
                                         </ul>
@@ -72,7 +74,7 @@ const Header = () => {
                                 </ul>
                             </div>
 
-                            <div className="menu-item">SETUP</div>
+                            {/* <div className="menu-item">SETUP</div> */}
                             <div className="menu-item">PLANNING</div>
                             <div className="menu-item">ENGINEERING</div>
 

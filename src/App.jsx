@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, RouterProvider } from "react-router-dom";
 import DashBoard from "./Component/DashBoard/DashBoard";
 import QualityApprovalForm from "./Component/QualityApproval/QualityApprovalForm";
 import StockVariationForm from "./Component/StockVariation/StockVariationForm";
@@ -32,6 +32,11 @@ import ContractorClosingStock from "./Component/StoreReports/ContractorClosingSt
 import ContractorWastageReport from "./Component/StoreReports/ContractorWastageReport/ContractorWastageReport";
 import LocationIssueReport from "./Component/StoreReports/LocationIssueReport/LocationIssueReport";
 import ContractorOutMaterialForm from "./Component/Store/ContractorOutMaterial/ContractorOutMaterialForm";
+import MRNGenerate from "./Component/MRNListForm/MRNGenerate";
+import MRNDetail from "./Component/MRNListForm/MRNDetail";
+import MRNVendor from "./Component/MRNListForm/MRNVendor";
+import MRNPreview from "./Component/MRNListForm/MRNPreview";
+
 
 function App() {
   return (
@@ -70,6 +75,10 @@ function App() {
         <Route path="/Contractor-wastage-report" element={<ContractorWastageReport/>}/>
         <Route path="/local-issue-report" element={<LocationIssueReport/>}/>
         <Route path="/contractor-out-material" element={<ContractorOutMaterialForm/>}/>
+        <Route path="/mrn-generator" element={<MRNGenerate/>}/>
+        <Route path="/mrn-detail" element={<MRNDetail/>}/>
+        <Route path="/mrn-vendor" element={<MRNVendor/>}/>
+        <Route path="/mrn-preview" element={<MRNPreview/>}/>
       
       </Routes>
     </Router> 

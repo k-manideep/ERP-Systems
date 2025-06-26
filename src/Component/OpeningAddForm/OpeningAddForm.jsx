@@ -1,6 +1,8 @@
 import React from "react";
 import "./OpeningAddForm.css";
 import Header from "../Partials/Header";
+import Footer from "../Partials/Footer";
+import ChatBotIcon from "../ChatBot/ChatBotIcon";
 
 const OpeningAddForm = () => {
   return (
@@ -65,6 +67,8 @@ const OpeningAddForm = () => {
         </form>
       </div>
     </div>
+    <Footer/>
+    <ChatBotIcon/>
     </>
   );
 };

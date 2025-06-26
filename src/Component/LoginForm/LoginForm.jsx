@@ -10,22 +10,27 @@ const LoginForm = () => {
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    console.log(e.target.value)
 
-    // try {
-    //   const response = await axios.post('http://localhost:5000/api/auth/login', {
-    //     username,
-    //     password
-    //   });
+    try {
+      const response = await axios.post('http://localhost:5000/api/login', {
+        username:username,
+        password:password
+      },{
+        headers:{
+          'Content-Type':'application/json'
+        }
+      });
 
       // Handle success (store user or redirect)
-      console.log('Login successful:',username);//, response.data);
+      console.log('Login successful:',response.data);//, response.data);
       localStorage.setItem('userName', username);//JSON.stringify(response.data));
       window.location.href = '/dashboard';
+      setError('') 
 
-    // } catch (err) {
-    //   console.error('Login error:', err);
-    //   setError('Invalid username or password');
-    // }
+    } catch (err) {
+      setError('Invalid username or password');
+    }
   };
 
   return (
