@@ -49,48 +49,54 @@ const IssueMaterialContractorForm = () => {
         {/* User Type Tabs */}
         <div className="form-field tabs">
           <label>User Type</label>
-          <div className="tab-group">
-            {["Employee", "Contractor", "Production"].map((type) => (
-              <button
-                key={type}
-                className={`tab-button ${userType === type ? "active" : ""}`}
-                onClick={() => setUserType(type)}
-              >
-                {type}
-              </button>
-            ))}
-          </div>
-        </div>
+          <div className="tab-row">
+            <div className="tab-group">
+              {["Employee", "Contractor", "Production"].map((type) => (
+                <button
+                  key={type}
+                  className={`tab-button ${userType === type ? "active" : ""}`}
+                  onClick={() => setUserType(type)}
+                >
+                  {type}
+                </button>
+              ))}
+            </div>
 
-        <div className="form-field">
-          <label>&nbsp;</label>
+          </div>
+
+        </div>
+        {/* <div className="select-wrapper">
+          <select><option>-Select-</option></select>
+        </div> */}
+        <div className={`select-wrapper ${userType === 'Contractor' ? 'contractor-margin' : ''}`}>
           <select><option>-Select-</option></select>
         </div>
 
-         {/* Conditional fields for Contractor only */}
-          {userType === 'Contractor' && (
-            <>
-              <div className="form-field tabs">
-                <label>Charge Type</label>
-                <div className="tab-group">
-                  {["FOC", "Chargeable"].map((type) => (
-                    <button
-                      key={type}
-                      className={`tab-button ${chargeType === type ? "active" : ""}`}
-                      onClick={() => setChargeType(type)}
-                    >
-                      {type}
-                    </button>
-                  ))}
-                </div>
-              </div>
 
-              <div className="form-field">
-                <label>Work Order</label>
-                <select><option>-Select-</option></select>
+        {/* Conditional fields for Contractor only */}
+        {userType === 'Contractor' && (
+          <>
+            <div className="form-field tabs">
+              <label>Charge Type</label>
+              <div className="tab-group">
+                {["FOC", "Chargeable"].map((type) => (
+                  <button
+                    key={type}
+                    className={`tab-button ${chargeType === type ? "active" : ""}`}
+                    onClick={() => setChargeType(type)}
+                  >
+                    {type}
+                  </button>
+                ))}
               </div>
-            </>
-          )}
+            </div>
+
+            <div className="form-field">
+              <label>Work Order</label>
+              <select><option>-Select-</option></select>
+            </div>
+          </>
+        )}
 
         <div className="form-field go-button-wrapper">
           <label>&nbsp;</label>
