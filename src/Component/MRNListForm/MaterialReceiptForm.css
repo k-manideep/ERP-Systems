@@ -1,0 +1,126 @@
+/* Overlay */
+.materialreceipt-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+/* Container */
+.materialreceipt-container {
+  background: #fff;
+  width: 95%;
+  max-width: 1200px;
+  border-radius: 4px;
+  padding: 15px;
+  border: 1px solid #d3dce6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+}
+
+/* Header Row */
+.materialreceipt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d3dce6;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.materialreceipt-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #0073aa;
+  font-weight: bold;
+}
+
+.materialreceipt-actions {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.materialreceipt-actions .new-btn,
+.materialreceipt-actions .view-btn {
+  background-color: #0073aa;
+  color: white;
+  border: none;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.materialreceipt-actions .view-btn {
+  background-color: #005f8a;
+}
+
+.materialreceipt-actions .close-icon {
+  font-size: 16px;
+  cursor: pointer;
+  color: #555;
+  margin-left: 8px;
+}
+
+/* Form Row */
+.materialreceipt-form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.materialreceipt-form-row div {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.materialreceipt-form-row label {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.materialreceipt-form-row select,
+.materialreceipt-form-row input {
+  width: 180px;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.or-text {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* Action Buttons (Preview & Go) */
+.form-actions {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.form-actions .preview-btn,
+.form-actions .go-btn {
+  background-color: #f5f5f5;
+  color: #0073aa;
+  border: 1px solid #0073aa;
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-actions .go-btn {
+  background-color: #0073aa;
+  color: #fff;
+}

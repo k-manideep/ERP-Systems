@@ -210,6 +210,7 @@ const OpeningEditableTable = ({ data }) => {
       <div className="ok-button-wrap">
         <button className="ok-btn" onClick={handleOkClick}>OK</button>
       </div>
+    
 
       {showSummary && (
         <div className="summary-section">
