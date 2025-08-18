@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useState } from "react"
 import "./OpeningQuantityForm.css";
 import Header from "../Partials/Header";
 import Footer from "../Partials/Footer";
 import ChatBotIcon from "../ChatBot/ChatBotIcon";
+import OpeningQuantityTable from "./OpeningQuantityTable";
 
 const OpeningQuantityForm = () => {
+   const [selectedProject, setSelectedProject] = useState("");
+   const [showTable, setShowTable] = useState(false);
+
+  // const handleGoClick = (e) => {
+  //   e.preventDefault();
+  //   setShowTable(true);
+  // };
+  const handleGoClick = (e) => {
+    e.preventDefault();
+    if (selectedProject) {
+      setShowTable(true); // ✅ Show the table below form
+    } else {
+      alert("Please select a project!");
+    }
+  };
   return (
     <>
     <Header />
@@ -22,9 +38,17 @@ const OpeningQuantityForm = () => {
           <label>
             Project <span className="required">*</span>
           </label>
-          <select>
+          {/* <select>
             <option>-Select-</option>
-          </select>
+          </select> */}
+          <select
+              value={selectedProject}
+              onChange={(e) => setSelectedProject(e.target.value)}
+            >
+              <option value="">-Select-</option>
+              <option value="The Drizzle">The Drizzle</option>
+              <option value="Project X">Project X</option>
+            </select>
         </div>
 
         <div className="form-group">
@@ -54,12 +78,17 @@ const OpeningQuantityForm = () => {
         </div>
 
         <div className="btn-wrap">
-          <button className="go-btn" type="submit">
+          {/* <button className="go-btn" type="submit">
             🔍 GO
-          </button>
+          </button> */}
+          <button className="go-btn" type="submit" onClick={handleGoClick}>
+              🔍 GO
+            </button>
         </div>
       </form>
+       {/* {showTable && <OpeningQuantityTable />} */}
     </div>
+     {showTable && <OpeningQuantityTable />}
     <Footer/>
     <ChatBotIcon/>
     </>

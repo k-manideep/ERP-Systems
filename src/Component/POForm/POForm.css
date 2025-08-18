@@ -1,0 +1,235 @@
+/* .po-form-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+select,
+textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.fetch-btn {
+  height: 38px;
+  padding: 0 15px;
+  background-color: #006eff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.fetch-btn:hover {
+  background-color: #0056cc;
+}
+
+.entry-details {
+  margin-top: 20px;
+}
+
+.entry-details h4 {
+  margin-bottom: 10px;
+}
+
+.entry-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.entry-table th,
+.entry-table td {
+  border: 1px solid #ccc;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.terms-section {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-section textarea {
+  height: 80px;
+  resize: vertical;
+  margin-top: 5px;
+}
+
+.create-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: darkgreen;
+}
+
+.message-text {
+  margin-top: 15px;
+  font-weight: bold;
+  color: green;
+} */
+
+
+.po-container {
+  border: 2px solid #ccc;
+  padding: 20px;
+  margin: 30px auto;
+  max-width: 1000px;
+  background: #fff;
+}
+
+.po-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #d0d7de;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.header-btn {
+  margin-left: 8px;
+    padding: 6px 12px;
+    background-color: white;
+    border: 1px solid #007bff;
+    color: #007bff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header-btn:hover {
+  background-color:  #007bff;
+  color: white;
+}
+
+.po-form-section .form-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 180px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+select, input, textarea {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.fetch-btn {
+padding: 8px 20px;
+    background-color: #fff;
+    border: 1px solid #0077b6;
+    color: #0077b6;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.fetch-btn:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+.entry-container {
+  border: 2px solid #999;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  background-color: #fafafa;
+}
+
+.entry-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+.entry-table th, .entry-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+.terms-section textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 5px;
+  resize: vertical;
+}
+
+.created-by {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.create-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.create-btn:hover {
+  background-color: darkgreen;
+}
+
+.message-text {
+  margin: 20px auto;
+  max-width: 1000px;
+  font-weight: bold;
+  color: green;
+  text-align: center;
+}
+.po-title{
+    color: #007bff;
+    font-size: 20px;
+    font-weight: bold;
+}

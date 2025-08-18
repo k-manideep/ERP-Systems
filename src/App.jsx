@@ -36,6 +36,8 @@ import MRNGenerate from "./Component/MRNListForm/MRNGenerate";
 import MRNDetail from "./Component/MRNListForm/MRNDetail";
 import MRNVendor from "./Component/MRNListForm/MRNVendor";
 import MRNPreview from "./Component/MRNListForm/MRNPreview";
+import POForm from "./Component/POForm/POForm";
+import POList from "./Component/POForm/POList";
 
 
 function App() {
@@ -79,6 +81,8 @@ function App() {
         <Route path="/mrn-detail" element={<MRNDetail/>}/>
         <Route path="/mrn-vendor" element={<MRNVendor/>}/>
         <Route path="/mrn-preview" element={<MRNPreview/>}/>
+        <Route path="/po-form" element={<POForm/>}/>
+        <Route path="/po-list" element={<POList/>}/>
       
       </Routes>
     </Router> 

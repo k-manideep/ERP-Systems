@@ -15,13 +15,17 @@ const Header = () => {
 
     const navigate = useNavigate(); // Initialize the navigate function from React Router
 
-    const toggleDropdown = () => {
-        setDropdownOpen((prevState) => !prevState); // Toggle the dropdown state
-    };
+   
+    const toggleDropdown = () => setDropdownOpen(!dropdownOpen);
 
-    const handleSelectOption = (option) => {
-        setSelectedOption(option); // Update selected project
-        setDropdownOpen(false); // Close the dropdown after selection
+  const handleSelectOption = (option) => {
+    const project = option === "--Select Our Project--" ? "" : option;
+    setSelectedOption(project);
+
+    // ✅ Save the project in localStorage so MRNListForm can read it
+    localStorage.setItem("selectedProject", project);
+
+    setDropdownOpen(false);
     };
 
     useEffect(() => {
@@ -118,6 +122,16 @@ const Header = () => {
                                             <li>
                                                 <Link to="/stock-variation" className="link-style">
                                                     Stock Variation
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/po-form" className="link-style">
+                                                    Po-Form
+                                                </Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/po-list" className="link-style">
+                                                    Po-List
                                                 </Link>
                                             </li>
                                         </ul>

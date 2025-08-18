@@ -4,7 +4,7 @@ import { FaTimes } from "react-icons/fa";
 
 const MaterialReceiptForm = ({ onClose }) => {
   return (
-    <div className="materialreceipt-overlay">
+    // <div className="materialreceipt-overlay">
       <div className="materialreceipt-container">
         <div className="materialreceipt-header">
           <h3>MRN</h3>
@@ -39,7 +39,7 @@ const MaterialReceiptForm = ({ onClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    // </div>
   );
 };
 
